@@ -158,8 +158,7 @@ func (o *OrchestrationBuilder) SetClient(c client.Clienter) {
 // Build registrers every interface to run orchestration
 func (o OrchestrationBuilder) Build() Orche {
 	if !o.isSetWatcher || !o.isSetDiscovery || !o.isSetScoring ||
-		!o.isSetService || !o.isSetExecutor || !o.isSetClient ||
-		!o.isSetVerifierConf {
+		!o.isSetService || !o.isSetExecutor || !o.isSetClient {
 		return nil
 	}
 
